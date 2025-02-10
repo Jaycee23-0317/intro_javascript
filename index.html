@@ -3,31 +3,15 @@
 		<title> Calculator </title>
 	</head>
 	<body>
-		<h1 id="action1" 
-		onclick="
-		document
-			.getElementById('action1')
-			.style.fontSize='60px'
-			"> Hello World 1 </h1>
-		<h1 id="action2"
-		ondblclick="
-		document
-			.getElementById('action2')
-			.innerHTML = 'Goodbye World';"
-			> Hello World 2 </h1>
-		<h1 id="action3"
-		onmouseover="
-		document
-			.getElementById('action3')
-			.style.color='red'"
-			> Hello World 3 </h1>
-		<h1 id="action4"
-		onmouseout="
-		document
-			.getElementById('action4')
-			.style.backgroundColor='blue'"
-			> Hello World 4 </h1>
-		
-    </table> 
+		<h1 id="action1" onclick="myfunction()"> Hello World 1 </h1>
+		<h1 id="action2" ondblclick="myfunction2()"> Hello World 2 </h1>
+		<h1 id="action3" onmouseover="myfunction3()"> Hello World 3 </h1>
+		<h1 id="action4" onmouseout="myfunction4()"> Hello World 4 </h1>
+		<script>
+		function myfunction(){var a = document.getElementById('action1').style.fontSize='60px';}
+		function myfunction2(){var b = document.getElementById('action2').innerHTML = 'Goodbye World';}
+		function myfunction3(){var c = document.getElementById('action3').style.color='red';}
+		function myfunction4(){var d = document.getElementById('action4').style.backgroundColor='blue';}
+		</script>
 	</body>
 </html>
